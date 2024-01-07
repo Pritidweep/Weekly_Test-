@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+        }
+
+        .gender-label {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="choose">Choose a course</option>
+            <option value="course1">Course 1</option>
+            <option value="course2">Course 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label>Gender:</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="male"> Male</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="female"> Female</label>
+        <label class="gender-label"><input type="checkbox" name="gender" value="other"> Other</label>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="retypePassword">Retype Password:</label>
+        <input type="password" id="retypePassword" name="retypePassword" required>
+
+        <label><input type="checkbox" name="agreeTerms" required> Agree to the Terms and Conditions</label>
+
+        <label for="file">Choose File:</label>
+        <input type="file" id="file" name="file">
+
+        <label for="color">Choose Color:</label>
+        <input type="color" id="color" name="color"> <br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
